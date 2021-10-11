@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { AirthingsComponent } from './airthings/airthings.component';
 import { OpenweatherComponent } from './openweather/openweather.component';
 import { TransportComponent } from './transport/transport.component';
+import { DeviceListComponent } from './airthings/device-list/device-list.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { TransportComponent } from './transport/transport.component';
     HomeComponent,
     AirthingsComponent,
     OpenweatherComponent,
-    TransportComponent
+    TransportComponent,
+    DeviceListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
