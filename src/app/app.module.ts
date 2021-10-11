@@ -11,6 +11,7 @@ import { AirthingsComponent } from './airthings/airthings.component';
 import { OpenweatherComponent } from './openweather/openweather.component';
 import { TransportComponent } from './transport/transport.component';
 import { DeviceListComponent } from './airthings/device-list/device-list.component';
+import { AirthingsService } from './shared/services/airthings.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { DeviceListComponent } from './airthings/device-list/device-list.compone
     NgbModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    AirthingsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

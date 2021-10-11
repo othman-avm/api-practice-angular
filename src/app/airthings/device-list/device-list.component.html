@@ -1,1 +1,9 @@
 <p>device-list works!</p>
+
+
+<span *ngFor="let device of devices['devices']">
+    <h1>
+        {{device.deviceType}}
+    </h1>
+</span>
+{{devices['devices'] | json}}

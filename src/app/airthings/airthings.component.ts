@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
+import { AirthingsService } from '../shared/services/airthings.service';
 
 @Component({
   selector: 'app-airthings',
   templateUrl: './airthings.component.html',
   styleUrls: ['./airthings.component.css']
 })
-export class AirthingsComponent implements OnInit {
+export class AirthingsComponent implements OnInit
+{
 
-  constructor() { }
+  token = '';
 
-  ngOnInit(): void {
+  devices = {};
+
+  constructor(private airthingsService: AirthingsService) { }
+
+  ngOnInit(): void
+  {
+    this.token = this.airthingsService.token;
+    this.airthingsService.getDeviceList(this.token)
+      .subscribe(devices => this.devices = devices);
   }
+
 
 }
