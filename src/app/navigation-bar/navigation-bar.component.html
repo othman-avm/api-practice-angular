@@ -1,0 +1,7 @@
+<nav class="navigation navbar navbar-expand-lg">
+    <a *ngFor="let link of links" [routerLink]="link.path" routerLinkActive="active">
+        <button>
+            {{link.title}}
+        </button>
+    </a>
+</nav>
