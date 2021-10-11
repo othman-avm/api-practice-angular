@@ -12,6 +12,7 @@ export class AirthingsComponent implements OnInit
   token = '';
 
   devices = {};
+  selectedDevice = null;
 
   constructor(private airthingsService: AirthingsService) { }
 
@@ -22,5 +23,9 @@ export class AirthingsComponent implements OnInit
       .subscribe(devices => this.devices = devices);
   }
 
-
+  selectDevice(device: any)
+  {
+    //console.log(device);
+    this.selectedDevice = device;
+  }
 }

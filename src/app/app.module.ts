@@ -12,6 +12,7 @@ import { OpenweatherComponent } from './openweather/openweather.component';
 import { TransportComponent } from './transport/transport.component';
 import { DeviceListComponent } from './airthings/device-list/device-list.component';
 import { AirthingsService } from './shared/services/airthings.service';
+import { DeviceDetailsComponent } from './airthings/device-details/device-details.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AirthingsService } from './shared/services/airthings.service';
     AirthingsComponent,
     OpenweatherComponent,
     TransportComponent,
-    DeviceListComponent
+    DeviceListComponent,
+    DeviceDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,5 @@
-<p>device-list works!</p>
-
-
 <span *ngFor="let device of devices['devices']">
-    <h1>
-        {{device.deviceType}}
-    </h1>
+    <button (click)="selectedDevice.emit(device)">
+        {{device.segment['name']}}
+    </button>
 </span>
-{{devices['devices'] | json}}

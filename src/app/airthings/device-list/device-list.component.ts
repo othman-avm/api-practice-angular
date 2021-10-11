@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 interface Device
 {
@@ -17,6 +17,7 @@ export class DeviceListComponent implements OnInit
   @Input() devices: any;
 
 
+  @Output() selectedDevice = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void
