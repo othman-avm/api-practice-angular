@@ -9,12 +9,28 @@ export class DeviceDetailsComponent implements OnInit
 {
 
 
-  @Input() deviceInput: any;
+  @Input() deviceDetails: any;
   @Input() sensorData: any;
   constructor() { }
 
   ngOnInit(): void
   {
+  }
+
+
+  /**
+   * Function that checks if the device has this type of sensor data available,
+   * 
+   * @param data 
+   */
+  checkData(data: any): boolean
+  {
+    //console.log(data)
+    if (data == undefined)
+    {
+      return false;
+    }
+    return true;
   }
 
 }

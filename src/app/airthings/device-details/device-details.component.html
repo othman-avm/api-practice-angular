@@ -1,5 +1,29 @@
-<div class="deviceDetails" *ngIf="sensorData">
+<div *ngIf="sensorData">
+    <p>
+        {{ deviceDetails | json}}
+    </p>
+    <p>
+        {{sensorData | json}}
+    </p>
     <h1>
-        Device Name: {{deviceInput.segment.name}}
+        Device Name: {{ deviceDetails.segment.name}}
     </h1>
+
+    <h2>
+        Device Information:
+    </h2>
+
+    <h4>
+        Location: {{ deviceDetails.location.name}}
+    </h4>
+
+    <h2>
+        Sensor Data:
+    </h2>
+
+
+    <h4 *ngIf="checkData(sensorData.data.pm25)">
+        PM 25:
+        {{sensorData.data.pm25}}
+    </h4>
 </div>
