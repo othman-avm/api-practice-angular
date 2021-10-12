@@ -1,29 +1,58 @@
-<div *ngIf="sensorData">
-    <p>
-        {{ deviceDetails | json}}
-    </p>
-    <p>
-        {{sensorData | json}}
-    </p>
+<div class="deviceDetails container" *ngIf="sensorData">
     <h1>
         Device Name: {{ deviceDetails.segment.name}}
     </h1>
 
-    <h2>
-        Device Information:
-    </h2>
-
-    <h4>
+    <h2 *ngIf="checkData(deviceDetails.location.name)">
         Location: {{ deviceDetails.location.name}}
-    </h4>
+    </h2>
+    <h2>
+        Active: {{deviceDetails.segment.active}}
+    </h2>
+    <hr class="thickLine">
 
     <h2>
         Sensor Data:
     </h2>
 
-
-    <h4 *ngIf="checkData(sensorData.data.pm25)">
-        PM 25:
-        {{sensorData.data.pm25}}
+    <h4>
+        Battery: {{checkData(sensorData.data.battery)}}%
     </h4>
+    <h4>
+        CO2: {{checkData(sensorData.data.co2)}}
+    </h4>
+    <h4>
+        Radon Short Term Average: {{checkData(sensorData.data.radonShortTermAvg)}}
+    </h4>
+    <h4>
+        Temperature: {{checkData(sensorData.data.temp)}} °C
+    </h4>
+    <h4>
+        Humidity: {{checkData(sensorData.data.humidity)}}
+    </h4>
+    <h4>
+        Pressure: {{checkData(sensorData.data.pressure)}}
+    </h4>
+    <h4>
+        VOC: {{checkData(sensorData.data.voc)}}
+    </h4>
+    <h4>
+        Light: {{checkData(sensorData.data.light)}}
+    </h4>
+    <h4>
+        PM 1: {{checkData(sensorData.data.pm1)}}
+    </h4>
+
+    <h4>
+        PM 25:
+        {{checkData(sensorData.data.pm25)}}
+    </h4>
+
+    <h4>
+        SLA: {{checkData(sensorData.data.sla)}}
+    </h4>
+    <h4>
+        Virus Risk: {{checkData(sensorData.data.virusRisk)}}
+    </h4>
+    <br>
 </div>

@@ -23,14 +23,14 @@ export class DeviceDetailsComponent implements OnInit
    * 
    * @param data 
    */
-  checkData(data: any): boolean
+  checkData(data: any)
   {
     //console.log(data)
     if (data == undefined)
     {
-      return false;
+      return "N/A";
     }
-    return true;
+    return data;
   }
 
 }

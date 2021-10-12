@@ -1,4 +1,12 @@
 .deviceDetails
 {
-    background-color: blue;
+    border-radius: 25px;
+    background-color: rgb(7, 184, 200);
+    color: rgb(110, 110, 110);
+}
+
+.thickLine
+{
+    border: 10px solid white;
+    border-radius: 5px;
 }
