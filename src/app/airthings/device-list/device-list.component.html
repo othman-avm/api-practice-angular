@@ -1,5 +1,7 @@
 <span *ngFor="let device of devices['devices']">
-    <button (click)="selectedDevice.emit(device)">
-        {{device.segment['name']}}
-    </button>
+    <span *ngIf="device.deviceType != 'HUB';">
+        <button (click)="selectedDevice.emit(device)">
+            {{device.segment['name']}}
+        </button>
+    </span>
 </span>
