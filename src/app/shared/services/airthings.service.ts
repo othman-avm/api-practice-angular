@@ -58,13 +58,13 @@ export class AirthingsService
    * @param token 
    * @param deviceID 
    */
-  getDeviceDetails(token: string, deviceID: string)
+  getSensorData(token: string, deviceID: string)
   {
 
     const model = `${BASE_URL}devices/${deviceID}/latest-samples`
 
 
-    var deviceDetails = this.http.get(model,
+    var sensorData = this.http.get(model,
       {
         headers:
         {
@@ -73,6 +73,6 @@ export class AirthingsService
       })
 
 
-    return deviceDetails;
+    return sensorData;
   }
 }

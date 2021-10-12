@@ -3,4 +3,5 @@
 <br>
 <br>
 <app-device-list [devices]="devices" (selectedDevice)="selectDevice($event)"></app-device-list>
-<app-device-details [deviceInput]="selectedDevice"></app-device-details>
+<br>
+<app-device-details [deviceInput]="selectedDevice" [sensorData]="sensorData"></app-device-details>

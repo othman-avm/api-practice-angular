@@ -1,5 +1,5 @@
-<span *ngIf="deviceInput">
-    <p>
-        {{deviceInput | json}}
-    </p>
-</span>
+<div class="deviceDetails" *ngIf="sensorData">
+    <h1>
+        Device Name: {{deviceInput.segment.name}}
+    </h1>
+</div>

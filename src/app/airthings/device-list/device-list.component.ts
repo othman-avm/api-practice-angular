@@ -18,7 +18,6 @@ export class DeviceListComponent implements OnInit
 
 
   @Output() selectedDevice = new EventEmitter();
-  @Output() deviceDetails = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void

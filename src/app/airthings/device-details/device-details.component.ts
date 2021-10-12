@@ -10,6 +10,7 @@ export class DeviceDetailsComponent implements OnInit
 
 
   @Input() deviceInput: any;
+  @Input() sensorData: any;
   constructor() { }
 
   ngOnInit(): void
