@@ -12,7 +12,7 @@ export class AirthingsService
 
 
   token =
-    "eyJraWQiOiJYd280RUJXQmhmNlQ5R09xU1B1VG5GVTI3amhQdDZqbmZfRHZWVnEtZ2JFIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MGNmNTNhNC05OWY5LTQxOWQtYTFiMy1jNjBhZTAxNDdlZmUiLCJhdWQiOiJiMDZhY2UxMy1mMDVmLTQyYTctYjVmYy00NmE1YTAwYTU0NjIiLCJuYmYiOjE2MzQwMjYxMjcsImF6cCI6ImIwNmFjZTEzLWYwNWYtNDJhNy1iNWZjLTQ2YTVhMDBhNTQ2MiIsInNjb3BlIjoicmVhZDpkZXZpY2UiLCJpc3MiOiJodHRwczpcL1wvYWNjb3VudHMtYXBpLmFpcnRoaW5ncy5jb21cL3YxIiwiaGJzIjoidHJ1ZSIsInR5cCI6IkJFQVJFUiIsImV4cCI6MTYzNDAzNjkyNywiaWF0IjoxNjM0MDI2MTI3LCJqdGkiOiJhN2ZjNjBlYS0yYThkLTRmMTUtOTgyNS01Nzc5YzdhNmEyNGQifQ.ePLmMxkZHRZrdyzgDuT3kUqYNXUu335p0cfoKNBOxH0KI_rKY8X_lHiaeaNvArtRSv2F8IB6OBBUMgXkD1nJUP5fHGR9KN5PMRairK8mtFoUW1n9s-o09-czkgkhN4JlxO7XvE4pyGxdJBl8iA0g9-mwRdcCMSOchVbRJIlmI11sJ-rQROCPwt5ltTajI5aJPl1yEjMQn5PqAxZyL-cvb43Isb8f5tNoLDeUGElrlXr_EfcGBBXhADWtrLTIS_494e4zFQWnRZOwjHPsOGTf7KDihAgqCXkt0ScNxcIG5MIS20EdeXaxr51svmh0sm2hBaBbtx-67oByKZTE0ofRl9Ti1js2htDpWwqdD80p1zAU805GwkFdRyLmzWmlsyU9TOAt44jTQ2clvP1MoVA9oPbEDbUmQIBOsUvCNZ4hmIibz0_q1Ce9Koi8OCbYE-NFFB_q1OaTSaPnw3qjw1B38K6FEH7WUKOfupNMLCR_YCFMN5ZFLHjUPexF9c30YIQUvPXOSgUKUONoRIQvFYg4vb_9aRfu4Qd3xi39BXjo45NI2TeiLVYocit-Ouya47ptcrOhe-BHp8hqzvdAQwIrnNXwDy_BsupHrBxHlKkSOGzssj7738sxUoS8scFFOl_ydAilWHXtO3a54APJciFGp6BxSZQFlXIdHRw_DNbYtz4";
+    "eyJraWQiOiJYd280RUJXQmhmNlQ5R09xU1B1VG5GVTI3amhQdDZqbmZfRHZWVnEtZ2JFIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MGNmNTNhNC05OWY5LTQxOWQtYTFiMy1jNjBhZTAxNDdlZmUiLCJhdWQiOiJiMDZhY2UxMy1mMDVmLTQyYTctYjVmYy00NmE1YTAwYTU0NjIiLCJuYmYiOjE2MzQwMzczMzYsImF6cCI6ImIwNmFjZTEzLWYwNWYtNDJhNy1iNWZjLTQ2YTVhMDBhNTQ2MiIsInNjb3BlIjoicmVhZDpkZXZpY2UiLCJpc3MiOiJodHRwczpcL1wvYWNjb3VudHMtYXBpLmFpcnRoaW5ncy5jb21cL3YxIiwiaGJzIjoidHJ1ZSIsInR5cCI6IkJFQVJFUiIsImV4cCI6MTYzNDA0ODEzNiwiaWF0IjoxNjM0MDM3MzM2LCJqdGkiOiI5Mzk0MGE4Zi1kNDgyLTQ5OWYtYjA2YS01YzM2NTY5YWY5YzgifQ.qYgPQ81dyz7gR_a_hr3S5umrF-0yG_Hr-YPiaZU1Cf0n1jTin0IK2lKFGE41-BQ9WzNSPavs6Kh5a0lOTfg3Y3hSTdqDJUX-a8FBLw6qWtHKGLhd6RSeMkBPcYMiphz_ZyoHT5GXk9rb9s5-Tk7P30aV67NCepTf1DGsOv9cOAFwHo7SHS8UsqRpztlfoDLv6vhkVdkw1uB5EIyQz-rjDvBDSxbQ8D_jBtWEb7kVrg0M4yGMUEBfe6pCVL2oI_uWEqgDEJN1ySjbqzf-2Nvd5jGRrf56BAGwZADJ8tec4acgw6NDGmmJyBcUprHchgq3j94Zq0UGDpPaTw-leMZUHrmMMDwDzLRVBADg4L6o2ZDz_U06x7au2ohuQduqzyo8J8e-_T_ZAwF3bzGhDEUyWcr4y_F_zONkduWmXK2DjdvhagwNN5uXhSg3AR4jj7cNE4n41ePGJB0bb2FWzzxs8l92nYoVBKTKFS1nL1KTN1XKjgd140iivC7HkRDXiAvNa7uE88od5vLqubiYsQgMEQAzTfu59SctFxMtVyvwbsriA6XzfrLxfAMauYAsgf0R2eK8-7h3atnn4Plb1UOE39vZtTPi6YXFIg3dGrQn8F929E7_-kcFZsIo4yS3PAz1RBsZXNwbQyuPNlYBDHDnC6t3lzP51v1i6Dqdwd8bccU";
 
 
 
@@ -50,5 +50,29 @@ export class AirthingsService
 
 
     return devices;
+  }
+
+  /**
+   * Make API Call, return details of a specific device
+   * 
+   * @param token 
+   * @param deviceID 
+   */
+  getDeviceDetails(token: string, deviceID: string)
+  {
+
+    const model = `${BASE_URL}devices/${deviceID}/latest-samples`
+
+
+    var deviceDetails = this.http.get(model,
+      {
+        headers:
+        {
+          "Authorization": token
+        }
+      })
+
+
+    return deviceDetails;
   }
 }

@@ -13,6 +13,7 @@ export class AirthingsComponent implements OnInit
 
   devices = {};
   selectedDevice = null;
+  private deviceDetails: any;
 
   constructor(private airthingsService: AirthingsService) { }
 
@@ -27,5 +28,21 @@ export class AirthingsComponent implements OnInit
   {
     //console.log(device);
     this.selectedDevice = device;
+
+    console.log(device['id'])
+    this.displayDeviceDetails(device['id'])
+  }
+
+
+  displayDeviceDetails(id: string)
+  {
+
+    // console.log("Before api call: ")
+    // console.log(deviceDetails)
+    this.airthingsService.getDeviceDetails(this.airthingsService.token, id).
+      subscribe(deviceDetails => this.deviceDetails = deviceDetails,
+        (err) => console.error(err), () => console.log(this.deviceDetails));
+    // console.log("After api call: ")
+    console.log(this.deviceDetails)
   }
 }
